@@ -1,0 +1,13 @@
+{
+  "name": "codegen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0"
+  },
+  "scripts":{
+    "openapi": "openapi-generator generate -i test.json -g typescript-axios -o ./models -c ./openapi.json --skip-validate-spec"
+  }
+}
+
